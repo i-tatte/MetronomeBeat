@@ -1,0 +1,18 @@
+﻿<Window x:Class="MetronomeBeat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetronomeBeat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="138.987" Width="181.392"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <Button Name="button" Content="計測開始" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" ClickMode="Press"/>
+        <CheckBox Content="音を鳴らす" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="聴覚フィードバック" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_1" Unchecked="CheckBox_Unchecked_1"/>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="100" Margin="952,167,-260,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock Name="text" HorizontalAlignment="Left" Margin="10,74,0,0" TextWrapping="Wrap" Text="状態：待機中" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
